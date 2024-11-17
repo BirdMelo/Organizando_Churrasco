@@ -1,0 +1,40 @@
+#howMach{
+    border: solid 1px var(--border-ListItems);
+    border-radius: 8px;
+    background-color: var(--bg);
+    width: 60vw;
+    max-width: 500px;
+    height: 100px;
+    padding: 12px;
+
+
+    display: none;
+    grid-template-columns: 70%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    inset: 50% 50%;
+    transform: translate(-50%, -50%);
+}
+/* #howMach label, #howMach input {
+    width: 25%;
+} */
+#howMach label{
+    font-size: 1rem;
+    text-align: center;
+}
+#howMach input{
+    font-size: 1rem;
+    background-color: var(--bg);
+    color: var(--text-color);
+    border: var(--border-ListItems) solid 1px;
+    text-align: center;
+    padding: 4px;
+    width: 35%;
+    justify-self: center;
+
+}
+#howMach input:focus{
+    outline: none;
+}

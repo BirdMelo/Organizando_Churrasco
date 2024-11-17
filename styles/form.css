@@ -1,0 +1,38 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 70vw;
+    max-width: 650px;
+}
+form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 50%;
+    max-width: 350px;
+}
+form label p{
+    align-self: start;
+}
+form label input {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+}
+form label input:focus, button:focus{
+    outline: orangered solid 2px;
+}
+.buttonList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    max-width: 650px;
+}
+@media screen and (max-width: 740px) {
+    form label{
+        width: 80%;
+    }
+}

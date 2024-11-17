@@ -1,0 +1,46 @@
+section{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 12px;
+    width: 70vw;
+    max-width: 650px;
+}
+.resumeLists{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    grid-auto-rows: auto;
+    gap: 4px;
+}
+.resumeLists li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 8px;
+    background-color: var(--bg-ListItems);
+    border: var(--border-ListItems) solid 1px;
+}
+#shoppingList li:hover {
+    cursor:default;
+}
+#close_cross{
+    font-family: var(--font-cross);
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    padding-bottom: 1px;
+    margin-left: 4px;
+}
+#close_cross:hover {
+    cursor: pointer;
+}
+#result {
+    display: flex;
+    justify-content: space-around;
+}
+#result div{
+    display: flex;
+    gap: 5px;
+}
