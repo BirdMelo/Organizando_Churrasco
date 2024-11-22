@@ -1,8 +1,11 @@
+
+
 export function add_li(listKey, value){
     const storage = JSON.parse(localStorage.getItem(listKey)) || []
     storage.push(value)
     localStorage.setItem(listKey, JSON.stringify(storage))
     create_li(storage, listKey)
+    showCust()
 }
 
 export function create_li(storage, listKey){
